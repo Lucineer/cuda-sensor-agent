@@ -1,0 +1,10 @@
+[package]
+name = "cuda-sensor-agent"
+version = "0.1.0"
+edition = "2021"
+description = "Perception agent — reads sensors, produces confidence-weighted observations, sensor fusion, health monitoring"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/Lucineer/cuda-sensor-agent"
+
+[dependencies]
+cuda-equipment = { path = "../cuda-equipment" }
