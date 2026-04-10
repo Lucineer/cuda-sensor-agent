@@ -2,9 +2,13 @@
 name = "cuda-sensor-agent"
 version = "0.1.0"
 edition = "2021"
-description = "Perception agent — reads sensors, produces confidence-weighted observations, sensor fusion, health monitoring"
+description = "Perception agent with Bayesian fusion and sensor health"
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/Lucineer/cuda-sensor-agent"
+readme = "README.md"
+keywords = ["ai", "fleet", "agent", "rust"]
+categories = ["science"]
 
 [dependencies]
-cuda-equipment = { path = "../cuda-equipment" }
+cuda-equipment = "0.1"
+serde = { version = "1", features = ["derive"] }
